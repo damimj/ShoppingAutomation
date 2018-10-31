@@ -3,7 +3,6 @@
 <html>
 
 <head>
-	<!--link rel="stylesheet" href="lib/style.css"-->
 	<script type="text/javascript" src="lib/script.js"></script>
 </head>
 
@@ -11,9 +10,16 @@
 		<h1>Hello Shopper!<br></h1>
 			<p>
 			Product name: <input id="productName" type="text"  > <br>
-			Quantity: <input id="quantity" type="text"  > <br>
-			Unit:<input id="unit" type="text"  > <br>
-			Price:<input id="price" type="text"  > <br>
+			Quantity: <input id="quantity" type="number"  > <br>
+			Unit:<select id="unit" > 
+					<option value="" disabled selected>---Select---</option>
+					<option value="kilo">Kilo</option>
+					<option value="gram">Grams</option>
+					<option value="ml">Ml</option>
+					<option value="litre">Litre</option>
+
+			</select><br>
+			Price:<input id="price" type="number"  > <br>
 			<button type="button" onclick="addProduct();">Add Product</button>
 		</p>
   	
